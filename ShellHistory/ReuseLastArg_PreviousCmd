@@ -1,0 +1,11 @@
+#Unzip a file, then delete the .zip
+unzip tpsreport.zip
+#Archive: tpsreport.zip
+    #inflating: cover-sheet.doc
+rm !$
+#rm tpsreport.zip
+
+#move cover-sheet.doc to the desired folder
+#show disk usage in human readable format
+mv cover-sheet.doc reports/
+du -sh reports/
